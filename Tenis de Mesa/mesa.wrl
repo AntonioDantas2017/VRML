@@ -1,0 +1,58 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 16, setembro de 2008 às 17:40
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+
+
+DEF mesa2 Transform { rotation 0 0 0 0  translation 0 0 0  scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+ appearance Appearance {     
+ texture ImageTexture { 
+          url ["C:\icg\img\texturamesa.jpg"] 
+       }
+    }
+     geometry Box { 
+
+size 2.74 1.525 0.01
+ }
+ }
+]}
+
+DEF mesa Transform { rotation 0 0 0 0  translation 0 0 -.05  scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+  material Material { 
+          diffuseColor     0 0 .5
+  }    }
+     geometry Box { 
+     
+   
+
+
+size 2.74 1.525 0.1
+
+ }
+ }
+]}
+
+
+
+
+
+Transform { rotation 0 1 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0.55 -.735 .75  scale .4 .1 .5 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}
+
+Transform { rotation 0 1 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0.55 -.735 -.75  scale .4 .1 .5 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}
+
+
+Transform { rotation 0 1 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0.55 .735 -.75  scale .4 .1 .5 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}
+
+Transform { rotation 0 1 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0.55 .735 .75  scale .4 .1 .5 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}
+
+Transform { rotation 1 0 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0 -.7 .7  scale .6 .05 1.2 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}
+
+
+Transform { rotation 1 0 0 1.5707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 1 0 0 1.57  translation 0 -.7 -.7  scale .6 .05 1.2 scaleOrientation 0 0 0 0 center 0 0 0   children [ USE mesa ] }]}

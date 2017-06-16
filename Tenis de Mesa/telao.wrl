@@ -1,0 +1,119 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 17, setembro de 2008 às 02:13
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+DEF telao Group {  children[Transform { rotation 0 0 0 0  translation 0 0 0  scale 3 2 .2scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.33 0.32 0.33
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+Transform { rotation 0 0 0 0  translation .01 0 -.1  scale 3 2 .1scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.33 0.32 0.33
+       }
+  }
+     geometry Box {  
+
+                   }
+ }]}
+
+Transform { rotation 0 0 0 0  translation 0 0 .05  scale 2.85 1.85 .2scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+            texture  MovieTexture { 
+           url ["C:\icg\img\ping.avi"] 
+           loop TRUE
+           stopTime -1
+       }
+ 
+     material Material {
+         diffuseColor     1 1 1
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}] }
+
+
+#-------------------------------------------------------------------------another
+Transform { rotation 0 1 0 .5707963267949  translation 5.25 0 -1.5  scaleOrientation 0 0 0 0 center 0 0 0   children[
+USE telao]}
+
+Transform { rotation 0 1 0 -.5707963267949  translation -5.25 0 -1.5  scaleOrientation 0 0 0 0 center 0 0 0   children[
+USE telao]}
+
+Transform {rotation 0 1 0 3.14 translation 0 0 -13 scale  1.3  1 1  scaleOrientation 0 0 0 0 center 0 0 0   children[
+USE telao]}
+
+Transform { rotation 0 1 0 1.5707963267949  translation 7.8 0 -6  scaleOrientation 0 0 0 0 center 0 0 0   children[USE telao]}
+
+Transform { rotation 0 1 0 -1.5707963267949  translation -7.8 0 -6  scaleOrientation 0 0 0 0 center 0 0 0   children[USE telao]}
+
+Transform { rotation 0 1 0 2.35619449019234  translation 5.8 0 -11  scaleOrientation 0 0 0 0 center 0 0 0   children[USE telao]}
+
+Transform { rotation 0 1 0 -2.35619449019234  translation -5.8 0 -11  scaleOrientation 0 0 0 0 center 0 0 0   children[USE telao]}
+
+#----------------------------------lampada
+DEF plataforma Transform { rotation 0 0 0 0  translation 0 2 -6.2  scale 7.4 .05 6.4 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor      0.33 0.32 0.33
+
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+ 
+Transform { rotation 0 0 0 0  translation 0 3 -7 scale .2 1 .2  scaleOrientation 0 0 0 0 center 0 0 0   children[ Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.33 0.32 0.33
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+Transform{ translation 0 -4 0 children[ USE plataforma]}
+#     PointLight
+#     {
+#             intensity  1
+#             color 1 1 1
+#             location 0 -20 0
+#     } 
+
+
+
+

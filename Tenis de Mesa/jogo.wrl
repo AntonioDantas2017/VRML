@@ -1,0 +1,279 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 16, setembro de 2008 às 17:55
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 1 0 0 -1.5707963267949  translation 0 .05 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\mesa.wrl " ] }]}
+
+
+DEF RAQ1 Transform { rotation 0 1 0 -1.57  translation 1.4 .4 0.3  scale .17 .17 .17  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\raquete.wrl " ] }]}
+
+Transform { rotation 0 0 0 0  translation  -.2 0 -.6  scaleOrientation 0 0 0 0 center 0 0 0   children[DEF RAQ2 Transform { rotation 0 1 0 1.57  translation -1.4 -.4 -0.3  scale .17 .17 .17 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\raquete.wrl " ] }]}]}
+
+Inline { url [ " C:\icg\rede.wrl " ] }
+
+
+
+
+
+DEF BALL Transform { rotation 0 0 0 0 translation 1.35 .4 0.3  scaleOrientation 0 0 0 0 center 0 0 0  scale 0.05 0.05 0.05  children[Inline { url [ " C:\icg\bolinha.wrl " ] }]}
+
+   DEF TIMER TimeSensor
+   {
+    cycleInterval  1
+    loop TRUE
+    }
+
+
+    DEF ROTOR PositionInterpolator
+    {
+      key [ 
+          0
+          0.12
+          0.24
+          0.36
+          0.48
+          0.6
+          0.72
+          0.84
+          0.96
+          1
+           ]
+ 
+ 
+       keyValue [ 
+        1.35 	.4 	.3,
+        0.65	.5	.15,
+        -0.2		.35	0,
+        -1.1		.1	-.15,
+        -1.35	.4	-.3,
+        -0.65	.5	-.15,
+        0.2		.35	0,
+        1.1		.1	.15,
+        1.35	.4	.3,
+              ] } 
+ 
+ 
+ ROUTE TIMER.fraction_changed TO ROTOR.set_fraction
+ ROUTE ROTOR.value_changed TO BALL.translation
+
+
+
+DEF ROTOR2 PositionInterpolator
+{
+key [
+0
+0.12
+0.24
+0.36
+0.48
+0.6
+0.72
+0.84
+0.96
+1
+]
+
+
+keyValue [
+1.5		.4	 0.3,
+1.6		.4	 0.3,
+1.7		.4	 0.3,
+1.8		.4	 0.3,
+1.9		.4	 0.3,
+1.8		.4	 0.3,
+1.7		.4	 0.3,
+1.6		.4	 0.3,
+1.5		.4	 0.3,
+1.4		.4	 0.3,
+] }
+
+
+ROUTE TIMER.fraction_changed TO ROTOR2.set_fraction
+ROUTE ROTOR2.value_changed TO RAQ1.translation
+
+
+DEF ROTOR3 PositionInterpolator
+{
+key [
+0
+0.12
+0.24
+0.36
+0.48
+0.6
+0.72
+0.84
+0.96
+1
+]
+
+
+keyValue [
+-1.6		.4	 0.3,
+-1.5		.4	 0.3,
+-1.4		.4	 0.3,
+-1.3		.4	 0.3,
+-1.2		.4	 0.3,
+-1.3		.4	 0.3,
+-1.4		.4	 0.3,
+-1.5		.4	 0.3,
+-1.6		.4	 0.3,
+-1.7		.4	 0.3,
+] }
+
+
+ROUTE TIMER.fraction_changed TO ROTOR3.set_fraction
+ROUTE ROTOR3.value_changed TO RAQ2.translation
+
+
+
+
+#---------------------------------------Arquibancada
+Transform { rotation 0 0 0 0  translation 0 -.5 2.2  scaleOrientation 0 0 0 0 center 0 0 0   children[DEF arquibancada Group {  children[DEF arke Transform { rotation 0 0 0 0  translation 0 0 -10  scale .3 .3 .3 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\cadeira.wrl " ] }]}
+
+
+ Transform { translation 1 0 0 children [ USE arke ] } 
+ Transform { translation 2 0 0 children [ USE arke ] } 
+ Transform { translation 3 0 0 children [ USE arke ] } 
+ Transform { translation -1 0 0 children [ USE arke ] } 
+ Transform { translation -2 0 0 children [ USE arke ] } 
+ Transform { translation -3 0 0 children [ USE arke ] } 
+
+ Transform { translation 2 0 1 children [ USE arke ] } 
+ Transform { translation 1 0 1 children [ USE arke ] } 
+ Transform { translation -1 0 1 children [ USE arke ] } 
+ Transform { translation -2 0 1 children [ USE arke ] } 
+ Transform { translation 0 0 1 children [ USE arke ] } ] }]}
+
+Transform { rotation 0 1 0 1.5707963267949  translation 4 -.5 -.5  scaleOrientation 0 0 0 0 center 0 0 0   children[USE arquibancada ]}
+
+ #--------------------------------------------------------------------Chão--------------------------------------------------------
+Transform { rotation 0 0 0 0  translation 0 -1 -1.5  scaleOrientation 0 0 0 0 center 0 0 0   children[ 
+Transform { rotation 0 0 0 0  translation 0 0 0 scale 7 .1 7  scaleOrientation 0 0 0 0 center 0 0 0   children[ Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0 0.52 0
+
+         transparency     0.59
+       }
+  }
+     geometry Box {  }
+ }]}
+
+Transform { rotation 0 0 0 0  translation 0 0 0  scale 7 .1 7 scaleOrientation 0 0 0 0 center 0 0 0   children[ Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor    1 1 1
+
+       }
+  }
+     geometry Box {  }
+ }]}]}
+#---detalhes
+
+#luz
+Transform { rotation 0 0 0 0  translation 6 -.6 5  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\luz.wrl " ] }]}
+ PointLight
+     {
+             intensity  1
+             color 1 1 1
+             location 6 -.6 5
+     } 
+
+Transform { rotation 0 0 0 0  translation -6 -.6 5  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\luz.wrl " ] }]}
+ PointLight
+     {
+             intensity  1
+             color 1 1 1
+             location -6 -.6 5
+     } 
+Transform { rotation 0 0 0 0  translation -6 -.6 -8  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\luz.wrl " ] }]}
+ PointLight
+     {
+             intensity  1
+             color 1 1 1
+             location -6 -.6 -8
+     } 
+Transform { rotation 0 0 0 0  translation 6 -.6 -8  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\luz.wrl " ] }]}
+ PointLight
+     {
+             intensity  1
+             color 1 1 1
+             location 6 -.6 -8
+     } 
+
+#PLACA
+
+DEF poste Transform { rotation 0 0 0 0  translation 5.5 1 2 scale .1 2 .1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.38 0.39 0.4
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+Transform { rotation 0 0 0 0  translation 0 0 -7  scaleOrientation 0 0 0 0 center 0 0 0   children[USE poste]}
+
+DEF plaketa Transform { rotation 0 1 0 1.5707963  translation 5.4 2.5 -1.5  scale 5 .5 .01 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\icg\img\PLACA.JPG"] 
+       }
+  }
+     geometry Box {  }
+ }]}
+ 
+Transform {translation .2 0 0 children [USE plaketa]}
+
+Transform { rotation 0 1 0 1.5707963  translation 5.5 2.5 -1.5  scale 5 .5 .07 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ material Material {
+         diffuseColor     0.38 0.39 0.4
+       }
+      
+  }
+     geometry Box {  }
+ }]}
+
+
+#telao
+Transform { rotation 0 0 0 0  translation 0 2.7 0 scale .2 .2 .2   scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\telao.wrl " ] }]}
+
+
+#camera
+Transform { rotation 0 0 0 0  translation 5 .3 0  scale .4 .4 .4 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\icg\camera.wrl " ] }]}
+
+
+Viewpoint
+{
+position -5 2 15
+
+orientation 0 1 0 -0.349065850398866
+}
+    
+
+
+
+
+
+
+
+
+
+
+

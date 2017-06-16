@@ -1,0 +1,82 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 11, setembro de 2008 às 08:07
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+DEF pnt Transform { rotation 0 0 0 0  translation 0 0 0  scale 1.21 .1 1.21 scaleOrientation 0 0 0 0 center 0 0 0   children[
+  Shape {
+  appearance Appearance {
+ 
+     material Material {
+        diffuseColor     1 1 1
+       }
+  }
+     geometry Box {  }
+ }]}
+
+
+DEF forro Transform { rotation 1 0 0 1.5707963267949   translation 0 .2 0 scale 1 1.2 .1 scaleOrientation 0 0 0 0 center 0 0 0   children[
+ Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     1 1 1
+
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+  
+DEF pt Transform { rotation 0 0 0 0  translation 0 0 0  scale 1.2 .2 1.2 scaleOrientation 0 0 0 0 center 0 0 0   children[
+  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.88 0.88 0.88
+       }
+  }
+     geometry Box {  }
+ }]}
+
+
+DEF treco   Transform { rotation 0 0 0 0  translation -1 .4855 -1.15 scale .05 .28 .05 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.88 0.88 0.88
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+]}
+
+
+ Transform {translation 2 0 0  children [ USE treco ] } 
+
+ DEF encosto Group {  children[ Transform{rotation 1 0 0 1.5707963267949 translation 0 1.35 -1.15 scale .9 .3 .5  children [USE pt]}
+ Transform{rotation 1 0 0 1.5707963267949 translation 0 1.35 -1.15 scale 1.2 .3 .5  children [USE forro]}
+ Transform{rotation 1 0 0 1.5707963267949 translation 0 1.35 -1.15 scale .9 .3 .5  children [USE pnt]}] }
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Transform {rotation 0 0 1 1.5707963267949 translation -1.05 -.9 .925 scale .7 .7 .2 children [ USE pt ] } 
+ Transform {rotation 0 0 1 1.5707963267949 translation -1.05 -.9 -.925 scale .7 .7 .2 children [ USE pt ] } 
+ Transform {rotation 0 0 1 1.5707963267949 translation 1.05 -.9 -.925 scale .7 .7 .2 children [ USE pt ] } 
+ Transform {rotation 0 0 1 1.5707963267949 translation 1.05 -.9 .925 scale .7 .7 .2 children [ USE pt ] } 
+

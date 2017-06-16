@@ -1,0 +1,75 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 17, setembro de 2008 às 10:03
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 0 0 0 0  translation 0 0 0 scale 1 .5 .5  scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+     
+     material Material {
+         diffuseColor     0.23 0.24 0.24
+
+       }
+  }
+     geometry Box {  }
+ }]}
+ 
+Transform { rotation 0 0 1 1.5709623  translation -1.2 0 0 scale .2 .2 .2  scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.23 0.24 0.24
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+]}
+  
+
+DEF pe Transform { rotation 0 0 1 0.585398163397448  translation .8 -1.6 0 scale .1 2 .1  scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.3 0.3 0.3
+
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+Transform { rotation 0 1 0 1.6790623  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[USE pe]}
+Transform { rotation 0 1 0 -1.6790623  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[USE pe]}
+
+
+Transform { rotation 0 0 1 -1.5707963267949  translation -10 .3 0  scale 3 10 3 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     1 1 1
+         transparency     0.8
+       }
+  }
+     geometry Cone {  
+                       side      TRUE
+                       bottom    FALSE
+                   }
+ }
+]}
+
+
+

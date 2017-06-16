@@ -1,0 +1,67 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 17, setembro de 2008 às 08:44
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 1 0 0 1.5707963267949  translation 0 0 0 scale 1 .06 1.2 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0 0.54 0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+Transform { rotation 1 0 0 1.5707963267949  translation 0 0 .05 scale .85 .06 .98 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0 0 0.56
+         transparency     0
+       }
+  }
+     geometry Sphere {  }
+ }]}
+
+Transform {translation 0 -1.5 -.07 scale .2 1 .15 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor      0 0 0.56
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+Transform {translation 0 -1.1 -.07 scale .22 .2 .152 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor      0 0.54 0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}

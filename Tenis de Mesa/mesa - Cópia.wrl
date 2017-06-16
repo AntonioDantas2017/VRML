@@ -1,0 +1,38 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 16, setembro de 2008 às 17:40
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+Transform { rotation 0 0 0 0  translation 0 0 0  scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0 0.52 0
+       }
+  }
+     geometry Box { 
+
+size 2.74 1.525 0.1
+
+ }
+ }
+]}
+
+#Transform { rotation 0 0 0 0  translation 0 0 0  scale 7 .3 3 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+#  appearance Appearance {
+# 
+#     material Material {
+#         diffuseColor     0 0.52 0
+#       }
+#  }
+#     geometry Box { 
+# }
+# }
+#]}

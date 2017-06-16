@@ -1,0 +1,152 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 17, setembro de 2008 às 10:21
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+
+
+DEF linha   Transform { rotation 1 0 0  1.5707963267949  translation 0 .051 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance { 
+     material Material {
+         diffuseColor     1 1 1
+       }
+  }
+     geometry Cylinder {  
+ 	height 1.525
+	radius 0.002
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+ 
+Transform { translation 0 0.2 0  children [ USE linha ] } 
+Transform { translation 0 0.19 0  children [ USE linha ] } 
+Transform { translation 0 0.18 0  children [ USE linha ] } 
+Transform { translation 0 0.17 0  children [ USE linha ] } 
+Transform { translation 0 0.16 0  children [ USE linha ] } 
+Transform { translation 0 0.15 0  children [ USE linha ] } 
+Transform { translation 0 0.14 0  children [ USE linha ] } 
+Transform { translation 0 0.13 0  children [ USE linha ] } 
+Transform { translation 0 0.12 0  children [ USE linha ] } 
+Transform { translation 0 0.11 0  children [ USE linha ] } 
+Transform { translation 0 0.1 0  children [ USE linha ] } 
+Transform { translation 0 0.09 0  children [ USE linha ] } 
+Transform { translation 0 0.08 0  children [ USE linha ] } 
+Transform { translation 0 0.07 0  children [ USE linha ] } 
+Transform { translation 0 0.06 0  children [ USE linha ] } 
+Transform { translation 0 0.05 0  children [ USE linha ] } 
+Transform { translation 0 0.04 0  children [ USE linha ] } 
+Transform { translation 0 0.03 0  children [ USE linha ] } 
+Transform { translation 0 0.02 0  children [ USE linha ] } 
+Transform { translation 0 0.01 0  children [ USE linha ] }
+
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.015 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.030 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.045 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.060 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.075 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.090 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.105 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.120 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.135 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.150 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.165 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.180 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.195 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.21 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.225 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.24 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.255 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.27 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.285 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.3 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.315 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.33 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.345 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.36 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.375 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.39 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.405 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.42 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.435 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.45 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.465 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.48 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.495 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.51 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.525 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.54 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.555 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.57 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.585 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.6 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.615 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.63 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.645 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.66 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.675 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.69 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.705 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.72 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.735 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.75 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.765 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.78 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 0.795 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 .958 scale 1 4 .133 children [ USE linha ] } 
+
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.015 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.030 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.045 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.060 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.075 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.090 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.105 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.120 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.135 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.150 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.165 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.180 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.195 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.21 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.225 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.24 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.255 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.27 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.285 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.3 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.315 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.33 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.345 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.36 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.375 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.39 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.405 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.42 scale 1 1 .133 children [ USE linha ] }  
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.435 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.45 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.465 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.48 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.495 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.51 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.525 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.54 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.555 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.57 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.585 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.6 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.615 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.63 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.645 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.66 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.675 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.69 scale 1 1 .133 children [ USE linha ] } 
+Transform {rotation 1 0 0 -1.5707963267949 translation 0 0.15 -0.55 scale 1 4 .133 children [ USE linha ] } 
