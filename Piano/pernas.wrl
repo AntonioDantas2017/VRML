@@ -1,0 +1,62 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 17:08
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+Transform { rotation 1 0 0 0.785398163397448  translation 0 0 0  scale .075 .6 .075 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\crom1.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+  
+
+Transform { rotation 1 0 0 0.785398163397448  translation 0 -.5 -.5  scale .17.17 .17 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+appearance Appearance {
+texture ImageTexture {
+url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\TEXTURA.JPG"]
+}
+material Material {
+diffuseColor     0 0 0
+emissiveColor    0 0 0
+specularColor    0 0 0
+ambientIntensity 0
+shininess        0
+transparency     0
+}
+}
+geometry Sphere {  }
+}]}
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+

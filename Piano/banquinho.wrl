@@ -1,0 +1,52 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 16:52
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+  
+Transform { rotation 0 0 0 0 translation 0 -.6 0 scale .15 .5 .15 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\crom1.JPG"] 
+       }
+     material Material {
+         diffuseColor     0.86 0.79 0.6
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+ ]}
+
+  
+
+
+Transform { rotation 0 0 0 0  translation 0 -1 -.5  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+
+
+Transform { rotation 0 1 0 2.0943951023932  translation -.4 -1 .25  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+
+Transform { rotation 0 1 0 -2.0943951023932  translation .4 -1 .25  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+
+
+
+
+
+
+
+
+

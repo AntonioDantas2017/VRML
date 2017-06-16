@@ -1,0 +1,41 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 15, junho de 2008 às 13:17
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+Transform { rotation 0 1 0 0.523598775598299  translation 0 0 -.8  scale .85 .85 .85 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena2.wrl " ] }]}
+
+
+ 
+
+
+Transform { rotation 0 1 0 0.523598775598299  translation 1 -1.25 1.25  scale .5 .5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\banco.wrl " ] }]}
+
+
+      Background
+      {
+            skyColor [0 0 0 ]
+       } 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+

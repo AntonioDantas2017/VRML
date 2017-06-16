@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 14:13
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena4-part.wrl " ] }
+
+Transform { rotation 0 1 0 0.226892802759263  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena4-part.wrl " ] }]}
+
+Transform { rotation 0 1 0 0.191986217719376  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena4-part.wrl " ] }]}
+
+Transform { rotation 0 1 0 0.15707963267949  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[
+Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena4-part.wrl " ] }]}
+
+
+

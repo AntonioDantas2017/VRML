@@ -1,0 +1,135 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 12, novembro de 2008 às 09:25
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+DEF radar Transform { rotation 0 0 1 .78  translation -1 .25 0  scaleOrientation 0 0 0 0 center .1 .5 .1   children[Transform { rotation 0 0 0 0  translation 0 0 0 scale 1 .1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     .95 .95 .95
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Sphere {  }
+ }]}
+
+
+DEF barra Transform { rotation 1 0 0 .5  translation 0 .5 -.26,  scale .1 .6 .1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+     material Material {
+         diffuseColor     .8 .8 .8
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+		radius .3
+                   }
+ }]}
+
+
+
+Transform { rotation 0 1 0 3.14  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[USE barra]}
+
+Transform { rotation 0 1 0 1.56  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[USE barra]}
+
+DEF cil Transform { rotation 0 0 0 0  translation 0 1 0  scale .15 .1 .15 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     .85 .85 .85
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+]}]}
+
+
+Transform { rotation 0 0 0 0  translation -.9 -.7 -.6  scale .15 1 .15 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     .85 .85 .85
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }
+]}
+
+
+
+
+   DEF TIMER TimeSensor
+   {
+    cycleInterval  5
+    loop TRUE
+    }
+
+
+
+    DEF ROTOR OrientationInterpolator
+    {
+      key [ 
+          0
+          0.12
+          0.24
+          0.36
+          0.48
+          0.6
+          0.72
+          0.84
+          0.96
+           ]
+ 
+ 
+       keyValue [ 
+        0	 1	 1	 0,
+        0	 1	 1	 0.785398163397448,
+        0	 1	 1	 1.5707963267949,
+        0	 1	 1	 2.35619449019234,
+        0	 1	 1	 3.14159265358979,
+        0	 1	 1	 3.92699081698724,
+        0	 1	 1	 4.71238898038469,
+        0	 1	 1	 5.49778714378214,
+        0	 1	 1	 6.28318530717958,
+              ] } 
+ 
+ 
+ ROUTE TIMER.fraction_changed TO ROTOR.set_fraction
+ ROUTE ROTOR.value_changed TO radar.rotation
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

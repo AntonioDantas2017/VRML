@@ -1,0 +1,75 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 11, novembro de 2008 às 23:32
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 1 0 0 -1.57  translation 0 0 -50  scaleOrientation 0 0 0 0 center 0 0 0   children[Shape{appearance Appearance 
+        {   material Material
+            {    diffuseColor     .5 .5 .5
+                  shininess        .5
+                  emissiveColor    0.16 0.16 0.16
+            }}
+
+		 geometry Extrusion
+		 {
+			 beginCap TRUE 
+			 endCap   TRUE 
+			 convex   FALSE
+			 crossSection[ 
+				-20	,	40
+				20	,	40
+				20	,	-3
+				10	,	-20
+				10	,	-50
+				-10	,	-50
+				-10	,	-20
+				-20	,	-3
+				-20	,	40
+				 ]
+			spine[
+				 0 0 1,
+				 0 0 0,
+
+
+
+			]
+		}
+}]}
+
+
+
+Transform { rotation 10 0 0 -1.57  translation 0 -7 -3 scale 1.2 100  2 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape{
+appearance Appearance 
+        {   material Material
+            {    diffuseColor    .5 .5 .5
+                  shininess        .5
+                  emissiveColor    0.16 0.16 0.16
+            }}
+
+		 geometry Extrusion
+		 {
+			 beginCap TRUE 
+			 endCap   TRUE 
+			 convex   FALSE
+			 crossSection[ 
+				-6	,	4		 
+				6	,	4		
+				0	,	-4		 
+				-6	,	4							
+				 ]
+			 spine [     
+				0 0 0,
+				0  .87  0
+			       ]
+		}
+}]}
+
+
+
+

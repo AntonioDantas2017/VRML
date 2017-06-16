@@ -1,0 +1,74 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 12, novembro de 2008 às 06:58
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 1 1 0 3.14  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[
+Transform { rotation 0 0 0 0  translation -2.4 2.2 -.7  scaleOrientation 0 0 0 0 center 0 0 0   children[DEF roda Transform { rotation 1 0 0 3.14  translation 0 -5 0  scale 1 1 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.884313725490196   0.884313725490196   0.884313725490196 
+       }
+  }
+     geometry Sphere {  }
+ }]}
+
+Transform { rotation 1 0 0 3.14  translation 0 -5 0  scale .8 .8 .6 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.584313725490196   0.584313725490196   0.584313725490196 
+       }
+  }
+     geometry Sphere {  }
+ }]}
+]}
+
+Transform { rotation 0 0 1 -0.685398163397448  translation 0 0 0  scale .5 1.5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.784313725490196   0.784313725490196   0.784313725490196 
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+Transform { rotation 0 0 1 -0.685398163397448  translation -1.3 -1.5 0  scale .3 1.5 .3 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.584313725490196   0.584313725490196   0.584313725490196 
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+Transform { rotation 0 0 1 -0.685398163397448  translation -2.35 -2.8 0  scale .5 .3 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+ 
+     material Material {
+         diffuseColor     0.784313725490196   0.784313725490196   0.784313725490196 
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}]}

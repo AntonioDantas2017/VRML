@@ -1,0 +1,73 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 15, junho de 2008 às 11:01
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 0 0 0 0  translation 0 .3 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Transform { rotation 0 0 0 0  translation 0 0 0 scale 1 .2 1 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\textura6.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+Transform { rotation 0 1 0 0.785398163397448  translation 0 .17 0 scale .85 .35 .85 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+
+     material Material {
+         diffuseColor     0.96 0.89 0.77
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Sphere {  }
+ }]}]}
+
+
+Transform { rotation 0 0 0 0  translation 0 0 0 scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\suporte.wrl " ] }]}
+
+Transform { rotation 0 0 0 0  translation 0 0 0 scale .5 .15 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance { texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\textura6.JPG"] 
+       }
+    
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+  

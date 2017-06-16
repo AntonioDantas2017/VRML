@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 14:44
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 1 0 0 -0.523598775598299  translation 0 0 0 scale 5 .5 .05 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\mogno.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+ 
+Transform { rotation 1 0 0 -0.523598775598299  translation 0 .5 -.25  scale 3.01 1 .09 scaleOrientation 0 0 0 0 center 0 0 0   children[
+Shape {
+appearance Appearance {
+texture ImageTexture {
+url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\mogno.JPG"]
+}
+material Material {
+diffuseColor     0 0 0
+emissiveColor    0 0 0
+specularColor    0 0 0
+ambientIntensity 0
+shininess        0
+transparency     0
+}
+}
+geometry Sphere {  }
+}]}
+
+
+
+
+
+Transform { rotation 1 0 0 -0.523598775598299  translation 0 .5 -.08  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\partitura.wrl " ] }]}
+
+
+Transform { rotation 1 0 0 -0.523598775598299  translation 0 .15 .35  scale .35 .02 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena3.wrl " ] }]}
+
+
+
+Transform { rotation 1 0 0 1.5707963267949  translation 0 -.5 -.2 scale 5 .6 .05 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pp.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+
+
+   
+
+
+
+
+   Background
+      {
+            skyColor [1 1 1 ]
+      } 
+
+ 
+
+

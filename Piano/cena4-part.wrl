@@ -1,0 +1,60 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 14:00
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 0 1 0 0.261799387799149  translation -.6 0 0  scale .5 .5 .005 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\part1.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }
+ ]}
+
+Transform { rotation 0 1 0 -0.261799387799149  translation .37 0 0  scale .5 .5 .005 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\part2.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }
+ ]}
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+

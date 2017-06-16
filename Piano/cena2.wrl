@@ -1,0 +1,127 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 14, junho de 2008 às 11:46
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+
+
+
+#fundo do piano
+Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena.wrl " ] }
+
+#topo do piano
+Transform { rotation 0 0 0 0  translation 0 2.6 0  scale 1 .04 1.6 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena3.wrl " ] }]}
+
+
+#laterais
+#Transform { rotation 0 0 0 0  translation 3.315 -.74 .4  scale .05 .7 1.8 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena.wrl " ] }]}
+
+
+Transform { rotation 0 0 0 0  translation 3.08 -1 .4  scale .12 .6 1.8 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena.wrl " ] }]}
+
+Transform { rotation 0 0 0 0  translation -3.08 -1 .4  scale .12 .6 1.8 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena.wrl " ] }]}
+
+
+#Transform { rotation 0 0 0 0  translation -3.315 -.74 .4  scale .05 .7 1.8 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\cena.wrl " ] }]}
+
+
+
+
+#teclado
+Transform { rotation 0 0 0 0  translation 0 0 .5  scale 1.2 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\teclado.wrl " ] }]}
+
+
+
+Transform { rotation 0 0 0 0  translation 0 .7 .5  scale .5 .5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\porta-partitura.wrl " ] }]}
+
+#pedal
+  
+
+Transform { rotation 0 0 0 0  translation 0 -2.2 .3 scale .08 .05 .4 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\OURO.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+ 
+
+Transform { rotation 0 0 0 0  translation .5 -2.2 .3 scale .08 .05 .4 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\OURO.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+
+Transform { rotation 0 0 0 0  translation -.5 -2.2 .3 scale .08 .05 .4 scaleOrientation 0 0 0 0 center 0 0 0   children[Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\OURO.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+
+
+#detalhes
+Transform { rotation 0 0 1 1.5707963267949  translation 3.08 .5 .45  scale .7 .42 .5   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\detalhe.wrl " ] }]}
+
+
+Transform { rotation 0 0 1 1.5707963267949  translation -3.08 .5 .45  scale .7 .42 .5   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\detalhe.wrl " ] }]}
+
+
+Transform { rotation 0 0 0 0  translation -3.1 -.98 .5  scale .2 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\detalhe2.wrl " ] }]}
+
+Transform { rotation 0 0 0 0  translation 3.1 -.98 .5  scale .2 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\detalhe2.wrl " ] }]}
+ 
+
+Transform { rotation 0 0 0 0  translation 0 0 -.3  scale  2.5 1.5 .1scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\mogno.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Box {  }
+ }]}
+ 
+

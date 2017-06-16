@@ -1,0 +1,23 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 15, junho de 2008 às 16:30
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+
+
+  
+
+
+Transform { rotation 0 0 0 0  translation 0 -1 -.5  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+
+
+Transform { rotation 0 1 0 2.0943951023932  translation -.4 -1 .25  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+
+Transform { rotation 0 1 0 -2.0943951023932  translation .4 -1 .25  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\pernas.wrl " ] }]}
+

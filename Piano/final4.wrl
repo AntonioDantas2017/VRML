@@ -1,0 +1,14 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 15, junho de 2008 às 15:44
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 0 0 0 0  translation 0 0 0  scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\caixa de som.wrl " ] }]}
+
+

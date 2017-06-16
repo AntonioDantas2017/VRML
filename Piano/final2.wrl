@@ -1,0 +1,67 @@
+#VRML V2.0 utf8
+# ----------------------------------------------------------------
+# Cena criada em 15, junho de 2008 às 15:31
+# ---------------------------------------------------------------
+
+ NavigationInfo
+ {
+      headlight TRUE
+      type ["EXAMINE"]
+  }
+ 
+Transform { rotation 0 0 0 0  translation 0 -3 -5 scale 6.5 .1  6.5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\crom1.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     0
+       }
+  }
+     geometry Cylinder {  
+                       bottom   TRUE
+                       side      TRUE
+                       top      TRUE
+                   }
+ }]}
+
+
+Transform { rotation 0 0 0 0  translation 0 7 -5  scale 6.5 10 6.5 scaleOrientation 0 0 0 0 center 0 0 0   children[  Shape {
+  appearance Appearance {
+       texture ImageTexture { 
+           url ["C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\crom4.JPG"] 
+       }
+     material Material {
+         diffuseColor     0 0 0
+         emissiveColor    0 0 0
+         specularColor    0 0 0
+         ambientIntensity 0
+         shininess        0
+         transparency     .8
+       }
+  }
+     geometry Cone {  
+                       side      TRUE
+                       bottom    TRUE
+                   }
+ }]}
+ 
+Transform { rotation 0 0 0 0  translation .5 -.8 -3  scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\FINAL.wrl " ] }]}
+
+
+Transform { rotation 0 0 0 0  translation -3 .25 -6  scale 1 1 1 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\microfone.wrl " ] }]}
+
+
+Transform { rotation 0 0 0 0  translation 0 -1.15 -10  scale .5 .5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\caixa de som.wrl " ] }]}
+
+Transform { rotation 0 0 0 0  translation -3 -1.15 0  scale .5 .5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\caixa de som.wrl " ] }]}
+
+Transform { rotation 0 1 0 0.785398163397448  translation 5 -1.15 -5  scale .5 .5 .5 scaleOrientation 0 0 0 0 center 0 0 0   children[Inline { url [ " C:\Documents and Settings\Duda\Meus documentos\Eduarda\CG\caixa de som.wrl " ] }]}
+
+
+ 
